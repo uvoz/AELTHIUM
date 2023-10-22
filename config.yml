@@ -1,0 +1,165 @@
+version: 1
+build:
+  proto:
+    path: proto
+    third_party_paths:
+    - third_party/proto
+    - proto_vendor
+accounts:
+- name: alice
+  coins:
+  - 20000token
+  - 200000000stake
+- name: bob
+  coins:
+  - 10000token
+  - 100000000stake
+- name: cepstrio
+  coins:
+  - 10002token
+  - 100000000stake
+- name: vladimir
+  coins:
+  - 10000token
+  - 100000000stake
+- name: safe
+  coins:
+  - 1000000000Licence
+  - 1000000000EUR
+  - 1000000000USD
+  - 1000000Hydrogen
+  - 1000000Helium
+  - 1000000Lithium
+  - 1000000Beryllium
+  - 1000000Boron
+  - 1000000Carbon
+  - 1000000Nitrogen
+  - 1000000Oxygen
+  - 1000000Fluorine
+  - 1000000Neon
+  - 1000000Sodium
+  - 1000000Magnesium
+  - 1000000Aluminium
+  - 1000000Silicon
+  - 1000000Phosphorus
+  - 1000000Sulfur
+  - 1000000Chlorine
+  - 1000000Argon
+  - 1000000Potassium
+  - 1000000Calcium
+  - 1000000Scandium
+  - 1000000Titanium
+  - 1000000Vanadium
+  - 1000000Chromium
+  - 1000000Manganese
+  - 1000000Iron
+  - 1000000Cobalt
+  - 1000000Nickel
+  - 1000000Copper
+  - 1000000Zinc
+  - 1000000Gallium
+  - 1000000Germanium
+  - 1000000Arsenic
+  - 1000000Selenium
+  - 1000000Bromine
+  - 1000000Krypton
+  - 1000000Rubidium
+  - 1000000Strontium
+  - 1000000Yttrium
+  - 1000000Zirconium
+  - 1000000Niobium
+  - 1000000Molybdenum
+  - 1000000Technetium
+  - 1000000Ruthenium
+  - 1000000Rhodium
+  - 1000000Palladium
+  - 1000000Silver
+  - 1000000Cadmium
+  - 1000000Indium
+  - 1000000Tin
+  - 1000000Antimony
+  - 1000000Tellurium
+  - 1000000Iodine
+  - 1000000Xenon
+  - 1000000Caesium
+  - 1000000Barium
+  - 1000000Lanthanum
+  - 1000000Cerium
+  - 1000000Praseodymium
+  - 1000000Neodymium
+  - 1000000Promethium
+  - 1000000Samarium
+  - 1000000Europium
+  - 1000000Gadolinium
+  - 1000000Terbium
+  - 1000000Dysprosium
+  - 1000000Holmium
+  - 1000000Erbium
+  - 1000000Thulium
+  - 1000000Ytterbium
+  - 1000000Lutetium
+  - 1000000Hafnium
+  - 1000000Tantalum
+  - 1000000Tungsten
+  - 1000000Rhenium
+  - 1000000Osmium
+  - 1000000Iridium
+  - 1000000Platinum
+  - 1000000Gold
+  - 1000000Mercury
+  - 1000000Thallium
+  - 1000000Lead
+  - 1000000Bismuth
+  - 1000000Polonium
+  - 1000000Astatine
+  - 1000000Radon
+  - 1000000Francium
+  - 1000000Radium
+  - 1000000Actinium
+  - 1000000Thorium
+  - 1000000Protactinium
+  - 1000000Uranium
+  - 1000000Neptunium
+  - 1000000Plutonium
+  - 1000000Americium
+  - 1000000Curium
+  - 1000000Berkelium
+  - 1000000Californium
+  - 1000000Einsteinium
+  - 1000000Fermium
+  - 1000000Mendelevium
+  - 1000000Nobelium
+  - 1000000Lawrencium
+  - 1000000Rutherfordium
+  - 1000000Dubnium
+  - 1000000Seaborgium
+  - 1000000Bohrium
+  - 1000000Hassium
+  - 1000000Meitnerium
+  - 1000000Darmstadtium
+  - 1000000Roentgenium
+  - 1000000Copernicium
+  - 1000000Nihonium
+  - 1000000Flerovium
+  - 1000000Moscovium
+  - 1000000Livermorium
+  - 1000000Tennessine
+  - 1000000Oganesson
+faucet:
+  name: bob
+  coins:
+  - 5token
+  - 100000stake
+  host: 0.0.0.0:4500
+client:
+  typescript:
+    path: ts-client
+  vuex:
+    path: vue/src/store
+  composables:
+    path: vue/src/composables
+  openapi:
+    path: docs/static/openapi.yml
+validators:
+- name: alice
+  bonded: 100000000stake
